@@ -1,5 +1,7 @@
 ### 0. Code review
 
+### 0.5 Set up a GitHub repo under the class organization
+
 ### 1. Survey
 
 Write a questionnaire that takes a list of statements,
@@ -31,6 +33,9 @@ Level 1:
 * The dealer reshuffles after every round
 * The included test file should pass (defining Card, Deck, and Hand)
 * Push your homework up to your repository on github
+
+Level 1.5:
+* Add graphics to your script: https://github.com/jdan/rubycards
 
 Level 2:
 * Ignore the included spec file, and test drive development yourself
