@@ -4,6 +4,7 @@ def count_letters(text)
   # Can also use `text.each_char`
   chars = text.split("")
   chars.each do |letter|
+    #next unless ('a'..'z').includes?(letter)
     if counts[letter]
       counts[letter] += 1
     else
@@ -14,7 +15,7 @@ def count_letters(text)
   counts
 end
 
-homework_text = File.read("./homework.md")
+homework_text = File.read("./questions.md")
 
 hw_counts = count_letters(homework_text)
 
