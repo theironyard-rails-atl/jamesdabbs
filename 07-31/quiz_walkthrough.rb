@@ -41,6 +41,9 @@ first_question = {
 
 #########
 
+right = 0
+wrong = 0
+
 puts first_question[:question]
 
 # Display each choice with an index
@@ -52,4 +55,11 @@ end
 print "Your answer? > "
 
 user_answer = gets.chomp
-puts "Your answer was: #{user_answer}"
+
+if user_answer.to_i == first_question[:answer] + 1 # the answer is correct
+  puts "You got it!"
+  right += 1
+else
+  puts "You got it wrong :("
+  wrong += 1
+end
