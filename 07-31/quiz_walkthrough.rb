@@ -42,7 +42,13 @@ first_question = {
 #########
 
 puts first_question[:question]
-puts first_question[:choices]
+
+# Display each choice with an index
+i = 1
+first_question[:choices].each do |choice|
+  puts "#{i}) #{choice}"
+  i += 1 # or i = i + 1
+end
 print "Your answer? > "
 
 user_answer = gets.chomp
