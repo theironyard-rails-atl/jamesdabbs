@@ -28,26 +28,23 @@
 # questions the user got right / wrong with answers at the
 # end.
 
-first_question = {
-   question: "Why did the chicken cross the road?",
-   choices: [
-     "Why does anyone do anything?",
-     "To get to the other side",
-     "Something something something YOUR MOM",
-     "Mu"
-   ],
-   answer: 1
-}
-
-second_question = {
-  question: "Am I right?",
-  choices: [
-    "Yes"
-  ],
-  answer: 0
-}
-
-questions = [ first_question, second_question ]
+questions = [{
+     question: "Why did the chicken cross the road?",
+     choices: [
+       "Why does anyone do anything?",
+       "To get to the other side",
+       "Something something something YOUR MOM",
+       "Mu"
+     ],
+     answer: 1
+  }, {
+    question: "Am I right?",
+    choices: [
+      "Yes"
+    ],
+    answer: 0
+  }
+]
 
 #########
 
