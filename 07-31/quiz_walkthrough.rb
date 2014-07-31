@@ -39,27 +39,41 @@ first_question = {
    answer: 1
 }
 
+second_question = {
+  question: "Am I right?",
+  choices: [
+    "Yes"
+  ],
+  answer: 0
+}
+
+questions = [ first_question, second_question ]
+
 #########
 
 right = 0
 wrong = 0
 
-puts first_question[:question]
+questions.each do |current_question|
+  puts current_question[:question]
 
-# Display each choice with an index
-i = 1
-first_question[:choices].each do |choice|
-  puts "#{i}) #{choice}"
-  i += 1 # or i = i + 1
+  # Display each choice with an index
+  i = 1
+  current_question[:choices].each do |choice|
+    puts "#{i}) #{choice}"
+    i += 1 # or i = i + 1
+  end
+  print "Your answer? > "
+
+  user_answer = gets.chomp
+
+  if user_answer.to_i == current_question[:answer] + 1 # the answer is correct
+    puts "You got it!"
+    right += 1
+  else
+    puts "You got it wrong :("
+    wrong += 1
+  end
 end
-print "Your answer? > "
 
-user_answer = gets.chomp
-
-if user_answer.to_i == first_question[:answer] + 1 # the answer is correct
-  puts "You got it!"
-  right += 1
-else
-  puts "You got it wrong :("
-  wrong += 1
-end
+puts "You got #{right} right and #{wrong} wrong out of #{questions.count}"
