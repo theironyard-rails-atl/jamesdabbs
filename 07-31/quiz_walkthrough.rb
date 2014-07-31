@@ -48,8 +48,8 @@ questions = [{
 
 #########
 
-right = 0
-wrong = 0
+right = []
+wrong = []
 
 questions.each do |current_question|
   puts current_question[:question]
@@ -66,11 +66,17 @@ questions.each do |current_question|
 
   if user_answer.to_i == current_question[:answer] + 1 # the answer is correct
     puts "You got it!"
-    right += 1
+    right << current_question
   else
     puts "You got it wrong :("
-    wrong += 1
+    wrong << current_question
   end
 end
 
-puts "You got #{right} right and #{wrong} wrong out of #{questions.count}"
+puts "You got #{right.count} right and #{wrong.count} wrong out of #{questions.count}"
+unless wrong.empty?
+  puts "You missed:"
+  wrong.each do |q|
+    puts "x #{q[:question]}"
+  end
+end
