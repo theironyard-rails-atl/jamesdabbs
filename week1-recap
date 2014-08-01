@@ -1,0 +1,26 @@
+# Key Ideas from Week 1
+
+* Objects and classes
+  * Strings, symbols, arrays, hashes, and methods of each
+* Functions and arguments
+* Conditionals (if, else, unless, while, until)
+* Introduction to Git and GitHub
+* Minitest and test driven design
+
+
+# Goals for Week 2
+
+* Classes, classes, classes
+  * Attributes and accessors
+  * Inheritance
+  * Class vs. instance methods
+  * Class vs. instance vs. local variables
+  * Method arguments (splats, defaults, and option hashes)
+  * Classes vs. modules
+* Errors and exceptions
+* Blocks and enumeration (map, reduce, select, reject, etc.)
+
+Time permitting
+* Basic HTML
+* Intro to Sinatra
+* Bundler and project layout
