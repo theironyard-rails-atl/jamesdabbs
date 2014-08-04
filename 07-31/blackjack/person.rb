@@ -19,12 +19,20 @@ class Person
 end
 
 
+class Cheater < Person
+  def blackjack?
+    true
+  end
+end
+
+
 class Dealer < Person
   attr_accessor :deck
 
   def initialize
-    @deck = Deck.new
     super
+    @deck = Deck.new
+    #@hand = Hand.new
   end
 
   def shuffle
@@ -44,13 +52,21 @@ class Dealer < Person
   end
 
   def should_hit?
-    score < 17
+    self.score < 17
   end
 end
 
 
 class Player < Person
   attr_accessor :money
+  # Getter:
+  # def money
+  #   @money
+  # end
+  # Setter:
+  # def money= amount
+  #   @money = amount
+  # end
 
   def initialize
     @money = 100
@@ -63,6 +79,12 @@ class Player < Person
 
   def win(amount, odds=1)
     self.money += amount * odds
+    # Equivalent:
+    # self.money = self.money + (amount * odds)
+    # NOT EQUIVALENT! Only sets local variable `money`
+    # money = money + (amount * odds)
+
+    # attr_writers ALWAYS need @ or self.
   end
 
   def lose(amount)

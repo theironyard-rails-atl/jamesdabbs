@@ -26,19 +26,18 @@ class Blackjack
 
   def ask_again
     ask 'Would you like to play again? (y/n) ' do |question|
-      question.in = %w(y n)
+      question.in = %w(y n) # words shortcut ["y", "n"]
     end
   end
 
   def ask_hit_or_stand
     ask 'Do you want to (h)it or (s)tand? ' do |question|
-      question.in = %w(h s)
+      question.in = %w(h s) # ["h", "s"]
     end
   end
 
   def ask_for_bet(player)
-    ask 'How much do you want to bet? ' \
-        "(max $#{player.money}) ", Integer do |question|
+    ask "How much do you want to bet? (max $#{player.money}) ", Integer do |question|
       question.default = 10
       question.in = (10..player.money)
     end
@@ -120,6 +119,7 @@ class Blackjack
   end
 end
 
+# Shortcut to avoid needing a separate script file
 if $PROGRAM_NAME == __FILE__
   Blackjack.new.play
 end

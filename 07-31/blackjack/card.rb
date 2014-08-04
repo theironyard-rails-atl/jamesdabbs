@@ -15,6 +15,8 @@ class Card
     # Note: you can combine assignments on one line like so.
     # This is particularly common in initialize methods.
     @rank, @suit = rank, suit
+    # @rank = rank
+    # @suit = suit
   end
 
   def value

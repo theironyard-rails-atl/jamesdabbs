@@ -20,6 +20,7 @@ class Hand
   end
 
   def value
+    # Add up base values
     total, aces = 0, 0
     @cards.each do |card|
       total += card.value
