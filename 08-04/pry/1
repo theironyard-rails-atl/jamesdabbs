@@ -1,0 +1,24 @@
+[0G[1] pry(main)> require "./str[Kudent"
+[1A[0G[1] pry(main)> require [31m[1;31m"[0m[31m./student[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[2] pry(main)> tim = Student.new("tim[K[K[KTim")
+[1A[0G[2] pry(main)> tim = [1;34;4mStudent[0m.new([31m[1;31m"[0m[31mTim[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mStudent:0x007ffc518b4638 @name="Tim"[1;31m>[0m[31m[0m[0m
+[3] pry(main)> ls tim
+[1A[0G[3] pry(main)> ls tim[1B[0G[1m[1;34mStudent#methods[0m[0m: name
+[1m[1;34minstance variables[0m[0m: [0;34m@name[0m
+[4] pry(main)> tim.name
+[1A[0G[4] pry(main)> tim.name[1B[0G=> [31m[1;31m"[0m[31mTim[1;31m"[0m[31m[0m[0m
+[5] pry(main)> tim.name = "Timothy"
+[1A[0G[5] pry(main)> tim.name = [31m[1;31m"[0m[31mTimothy[1;31m"[0m[31m[0m[1B[0GNoMethodError: undefined method `name=' for #<Student:0x007ffc518b4638 @name="Tim">
+from (pry):4:in `__pry__'
+[6] pry(main)> tim.name = "Timothy"[C[C[C[C[C[C[C[Kload "./stend[K[K[Kudent.rb"
+[1A[0G[6] pry(main)> load [31m[1;31m"[0m[31m./student.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[7] pry(main)> ls time[K
+[1A[0G[7] pry(main)> ls tim[1B[0G[1m[1;34mStudent#methods[0m[0m: name  name=
+[1m[1;34minstance variables[0m[0m: [0;34m@name[0m
+[8] pry(main)> tim.name = "Timothy"
+[1A[0G[8] pry(main)> tim.name = [31m[1;31m"[0m[31mTimothy[1;31m"[0m[31m[0m[1B[0G=> [31m[1;31m"[0m[31mTimothy[1;31m"[0m[31m[0m[0m
+[9] pry(main)> tim
+[1A[0G[9] pry(main)> tim[1B[0G=> [31m[1;31m#<[0m[31mStudent:0x007ffc518b4638 @name="Timothy"[1;31m>[0m[31m[0m[0m
+[10] pry(main)> tim.name
+[1A[0G[10] pry(main)> tim.name[1B[0G=> [31m[1;31m"[0m[31mTimothy[1;31m"[0m[31m[0m[0m
+[11] pry(main)> 

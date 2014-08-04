@@ -1,0 +1,118 @@
+[0G[1] pry(main)> require "./args"
+[1A[0G[1] pry(main)> require [31m[1;31m"[0m[31m./args[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[2] pry(main)> require "./args"[1PKeywordCard.new(:suit => :clubs, :rank => 5)[K(:suit => :clubs, :rank => 5)[K
+[1A[0G[2] pry(main)> [1;34;4mKeywordCard[0m.new[1B[0GArgumentError: wrong number of arguments (0 for 1)
+from /Users/jdabbs/projects/homework/08-04/args.rb:25:in `initialize'
+[3] pry(main)> KeywordCard.new[K[7@(reverse-i-search)`':[Cl': KeywordCard.new(:suit => :clubs, :rank => 5)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Po': load "./args.rb"[9P[3] pry(main)>[C
+[1A[0G[3] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[4] pry(main)> load "./args.rb"[1PKeywordCard.newrequire "./args"[1PKeywordCard.new
+[1A[0G[4] pry(main)> [1;34;4mKeywordCard[0m.new[1B[0GThe argument hash is: {}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63e0511c0 @rank=nil, @suit=nil[1;31m>[0m[31m[0m[0m
+[5] pry(main)> KeywordCard.newload "./args.rb"[1PKeywordCard.newrequire "./args"[1PKeywordCard.newload "./args.rb"[1PKeywordCard.new[KKeywordCard.newload "./args.rb"[1PKeywordCard.new[KKeywordCard.newload "./args.rb"[1PKeywordCard.newload "./args.rb"
+[1A[0G[5] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[6] pry(main)> Keyload "./args.rb"[1PKeywordCard.new
+[1A[0G[6] pry(main)> [1;34;4mKeywordCard[0m.new[1B[0GThe argument hash is: {}
+NameError: uninitialized constant KeywordCard::RANKS
+from /Users/jdabbs/projects/homework/08-04/args.rb:27:in `initialize'
+[7] pry(main)> KeywordCard.newload "./args.rb"
+[1A[0G[7] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[8] pry(main)> load "./args.rb"[1PKeywordCard.new
+[1A[0G[8] pry(main)> [1;34;4mKeywordCard[0m.new[1B[0GThe argument hash is: {}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63dc4c638 @rank=9, @suit=:spades[1;31m>[0m[31m[0m[0m
+[9] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[9] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63dc25010 @rank=:A, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[10] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[10] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63dbf7b38 @rank=:A, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[11] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[11] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63db3e688 @rank=:A, @suit=:clubs[1;31m>[0m[31m[0m[0m
+[12] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[12] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63dadf728 @rank=:A, @suit=:spades[1;31m>[0m[31m[0m[0m
+[13] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[13] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63daa7f80 @rank=:A, @suit=:clubs[1;31m>[0m[31m[0m[0m
+[14] pry(main)> KeywordCard.new :rank => :A
+[1A[0G[14] pry(main)> [1;34;4mKeywordCard[0m.new [33m:rank[0m => [33m:A[0m[1B[0GThe argument hash is: {:rank=>:A}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63da5ffa0 @rank=:A, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[15] pry(main)> KeywordCard.new :rank => :A[C[K[K[K[K[K[K[K[K[K[Ksuit => "[K:hearts
+[1A[0G[15] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63d86b348 @rank=:A, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[16] pry(main)> KeywordCard.new :suit => :hearts
+[1A[0G[16] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63a953e20 @rank=2, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[17] pry(main)> KeywordCard.new :suit => :hearts
+[1A[0G[17] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63db8f2e0 @rank=7, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[18] pry(main)> KeywordCard.new :suit => :hearts
+[1A[0G[18] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63b9b28c0 @rank=:J, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[19] pry(main)> KeywordCard.new :suit => :hearts
+[1A[0G[19] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63e819dd0 @rank=9, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[20] pry(main)> KeywordCard.new :suit => :hearts
+[1A[0G[20] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0GThe argument hash is: {:suit=>:hearts}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb6408153c8 @rank=8, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[21] pry(main)> KeywordCard.new :suit => :hearts, :border_width => 20
+[1A[0G[21] pry(main)> [1;34;4mKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m, [33m:border_width[0m => [1;34m20[0m[1B[0GThe argument hash is: {:suit=>:hearts, :border_width=>20}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007fb63f014120 @rank=9, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[22] pry(main)> [6@(reverse-i-search)`':[Cl': load "./args.rb"[1@o[C[C[C[1@a[C[C[C[9P[22] pry(main)>[C
+[1A[0G[22] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[23] pry(main)> NewerKeywordCard.new rank: 4
+[1A[0G[23] pry(main)> [1;34;4mNewerKeywordCard[0m.new [35mrank[0m: [1;34m4[0m[1B[0G=> [31m[1;31m#<[0m[31mNewerKeywordCard:0x007fb63a9af720 @rank=4, @suit=:spades[1;31m>[0m[31m[0m[0m
+[24] pry(main)> NewerKeywordCard.new rank: 4[K[K[K[K[K[K[K:spa[K[K[Ksuit => :hearts
+[1A[0G[24] pry(main)> [1;34;4mNewerKeywordCard[0m.new [33m:suit[0m => [33m:hearts[0m[1B[0G=> [31m[1;31m#<[0m[31mNewerKeywordCard:0x007fb63e87adb0 @rank=5, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[25] pry(main)> NewerKeywordCard.new :suit => :hearts[K[K[K[K[K[K[K[K[K> :diamonds, :this => :that
+[1A[0G[25] pry(main)> [1;34;4mNewerKeywordCard[0m.new [33m:suit[0m => [33m:diamonds[0m, [33m:this[0m => [33m:that[0m[1B[0GArgumentError: unknown keyword: this
+from (pry):25:in `new'
+[26] pry(main)> NewerKeywordCard.new :suit => :diamonds, :this => :that[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KNewerKeywordCard.new :suit => :diamonds, :this => :thathearts[K[9Prank: 4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pload "./args.rb"KeywordCard.new :suit => :hearts, :border_width => 20[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cload "./args.rb"[K
+[1A[0G[26] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:14: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:15: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[27] pry(main)> sum 1[K1,2
+[1A[0G[27] pry(main)> sum [1;34m1[0m,[1;34m2[0m[1B[0G=> [1;34m3[0m[0m
+[28] pry(main)> sum 1,2,3,4,5,6,[K
+[1A[0G[28] pry(main)> sum [1;34m1[0m,[1;34m2[0m,[1;34m3[0m,[1;34m4[0m,[1;34m5[0m,[1;34m6[0m[1B[0GArgumentError: wrong number of arguments (6 for 2)
+from /Users/jdabbs/projects/homework/08-04/args.rb:9:in `sum'
+[29] pry(main)> sum 1,2,3,4,5,6[Kload "./args.rb"
+[1A[0G[29] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:14: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:14: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:15: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:15: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[30] pry(main)> sum 1,2
+[1A[0G[30] pry(main)> sum [1;34m1[0m,[1;34m2[0m[1B[0Gnumbers is [1, 2] (a Array)
+=> [1;36mnil[0m[0m
+[31] pry(main)> sum 1,2,3,4,5,6,7
+[1A[0G[31] pry(main)> sum [1;34m1[0m,[1;34m2[0m,[1;34m3[0m,[1;34m4[0m,[1;34m5[0m,[1;34m6[0m,[1;34m7[0m[1B[0Gnumbers is [1, 2, 3, 4, 5, 6, 7] (a Array)
+=> [1;36mnil[0m[0m
+[32] pry(main)> sum 1,2,3,4,5,6,7[Kload "./args.rb"
+[1A[0G[32] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:19: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:14: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:20: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:15: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[33] pry(main)> sum 1,2,3,4
+[1A[0G[33] pry(main)> sum [1;34m1[0m,[1;34m2[0m,[1;34m3[0m,[1;34m4[0m[1B[0Gnumbers is [1, 2, 3, 4] (a Array)
+=> [1;34m10[0m[0m
+[34] pry(main)> 

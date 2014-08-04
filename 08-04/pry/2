@@ -1,0 +1,200 @@
+[0G[1] pry(main)> require "./[K[Kcolorize"
+[1A[0G[1] pry(main)> require [31m[1;31m"[0m[31mcolorize[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[2] pry(main)> puts "This string is boring"
+[1A[0G[2] pry(main)> puts [31m[1;31m"[0m[31mThis string is boring[1;31m"[0m[31m[0m[1B[0GThis string is boring
+=> [1;36mnil[0m[0m
+[3] pry(main)> put [Ks [Kls "A string"
+[1A[0G[3] pry(main)> ls [31m[1;31m"[0m[31mA string[1;31m"[0m[31m[0m[1B[0G[1m[1;34mComparable#methods[0m[0m: <  <=  >  >=  between?
+[1m[1;34mString#methods[0m[0m: 
+  %            colorized?      inspect           on_magenta   sub            
+  *            concat          intern            on_red       sub!           
+  +            count           length            on_white     succ           
+  <<           crypt           light_black       on_yellow    succ!          
+  <=>          cyan            light_blue        ord          sum            
+  ==           delete          light_cyan        partition    swap           
+  ===          delete!         light_green       prepend      swapcase       
+  =~           downcase        light_magenta     red          swapcase!      
+  []           downcase!       light_red         replace      to_c           
+  []=          dump            light_white       reverse      to_f           
+  ascii_only?  each_byte       light_yellow      reverse!     to_i           
+  b            each_char       lines             rindex       to_r           
+  black        each_codepoint  ljust             rjust        to_s           
+  blink        each_line       lstrip            rpartition   to_str         
+  blue         empty?          lstrip!           rstrip       to_sym         
+  bold         encode          magenta           rstrip!      tr             
+  bytes        encode!         match             scan         tr!            
+  bytesize     encoding        next              scrub        tr_s           
+  byteslice    end_with?       next!             scrub!       tr_s!          
+  capitalize   eql?            oct               setbyte      uncolorize     
+  capitalize!  force_encoding  on_black          shell_split  underline      
+  casecmp      freeze          on_blue           shellescape  unpack         
+  center       getbyte         on_cyan           shellsplit   upcase         
+  chars        green           on_green          size         upcase!        
+  chomp        gsub            on_light_black    slice        upto           
+  chomp!       gsub!           on_light_blue     slice!       valid_encoding?
+  chop         hash            on_light_cyan     split        white          
+  chop!        hex             on_light_green    squeeze      yellow         
+  chr          hide            on_light_magenta  squeeze!   
+  clear        include?        on_light_red      start_with?
+  codepoints   index           on_light_white    strip      
+  colorize     insert          on_light_yellow   strip!     
+[4] pry(main)> puts "This is tr[K[Kstring is EXCITING".blue.on_red
+[1A[0G[4] pry(main)> puts [31m[1;31m"[0m[31mThis is string is EXCITING[1;31m"[0m[31m[0m.blue.on_red[1B[0G[0;34;41mThis is string is EXCITING[0m
+=> [1;36mnil[0m[0m
+[5] pry(main)> require "./pen"
+[1A[0G[5] pry(main)> require [31m[1;31m"[0m[31m./pen[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[6] pry(main)> p = Pen.new
+[1A[0G[6] pry(main)> p = [1;34;4mPen[0m.new[1B[0GArgumentError: wrong number of arguments (0 for 1)
+from /Users/jdabbs/projects/homework/08-04/pen.rb:5:in `initialize'
+[7] pry(main)> p[Kp = Pen.new("blue")
+[1A[0G[7] pry(main)> p = [1;34;4mPen[0m.new([31m[1;31m"[0m[31mblue[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mPen:0x007f8704b64e40 @color="red"[1;31m>[0m[31m[0m[0m
+[8] pry(main)> p.write "some text"
+[1A[0G[8] pry(main)> p.write [31m[1;31m"[0m[31msome text[1;31m"[0m[31m[0m[1B[0G[0;31;49msome text[0m
+=> [1;36mnil[0m[0m
+[9] pry(main)> re[K[Kload "./pen.rb"
+[1A[0G[9] pry(main)> load [31m[1;31m"[0m[31m./pen.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[10] pry(main)> p.write "some text
+[1A[0G[10] pry(main)> p.write [31m[1;31m"[0m[31msome text[0m[1B[0G[10] pry(main)* "
+[1A[0G[10] pry(main)* [31m[1;31m"[0m[31m[0m[1B[0GNoMethodError: undefined method `color' for "some text\n":String
+from /Users/jdabbs/projects/homework/08-04/pen.rb:12:in `write'
+[11] pry(main)> "p.write "some text[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pload "./pen.rb"
+[1A[0G[11] pry(main)> load [31m[1;31m"[0m[31m./pen.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[12] pry(main)> load "./pen.rb"[Kp
+[1A[0G[12] pry(main)> p[1B[0G=> [31m[1;31m#<[0m[31mPen:0x007f8704b64e40 @color="red"[1;31m>[0m[31m[0m[0m
+[13] pry(main)> pload "./pen.rb"p[K[Kp.write "This should work"
+[1A[0G[13] pry(main)> p.write [31m[1;31m"[0m[31mThis should work[1;31m"[0m[31m[0m[1B[0G[0;31;49mThis should work[0m
+=> [1;36mnil[0m[0m
+[14] pry(main)> "[K"this is a string".upcase
+[1A[0G[14] pry(main)> [31m[1;31m"[0m[31mthis is a string[1;31m"[0m[31m[0m.upcase[1B[0G=> [31m[1;31m"[0m[31mTHIS IS A STRING[1;31m"[0m[31m[0m[0m
+[15] pry(main)> "this is a string".send :upcase
+[1A[0G[15] pry(main)> [31m[1;31m"[0m[31mthis is a string[1;31m"[0m[31m[0m.send [33m:upcase[0m[1B[0G=> [31m[1;31m"[0m[31mTHIS IS A STRING[1;31m"[0m[31m[0m[0m
+[16] pry(main)> "this is a string".send :upcase[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"this is a string".send :upcase[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kb = [K[K[Klue = Pen.new("blue")
+[1A[0G[16] pry(main)> blue = [1;34;4mPen[0m.new([31m[1;31m"[0m[31mblue[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mPen:0x007f8707d2fee8 @color="blue"[1;31m>[0m[31m[0m[0m
+[17] pry(main)> blue.wi[Krite "other text"
+[1A[0G[17] pry(main)> blue.write [31m[1;31m"[0m[31mother text[1;31m"[0m[31m[0m[1B[0G[0;34;49mother text[0m
+=> [1;36mnil[0m[0m
+[18] pry(main)> blue.write "other text"[1P = Pen.new("blue")lblue")iblue")gblue")hblue")tblue")_blue")
+[1A[0G[18] pry(main)> blue = [1;34;4mPen[0m.new([31m[1;31m"[0m[31mlight_blue[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mPen:0x007f8704bfc178 @color="light_blue"[1;31m>[0m[31m[0m[0m
+[19] pry(main)> blue = Pen.new("light_blue")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P.write "other text"
+[1A[0G[19] pry(main)> blue.write [31m[1;31m"[0m[31mother text[1;31m"[0m[31m[0m[1B[0G[0;94;49mother text[0m
+=> [1;36mnil[0m[0m
+[20] pry(main)> blue.write "other text" = Pen.new("light_blue")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P.write "other text"[1P = Pen.new("blue")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"this is a string".send :upcase[6Pupcasesend :upcase[6Pupcasesend :upcase[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pblue = Pen.new("blue")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"this is a string".send :upcase[C[C"[1Pupcase""upcase"
+[1A[0G[20] pry(main)> [31m[1;31m"[0m[31mthis is a string[1;31m"[0m[31m[0m.send [31m[1;31m"[0m[31mupcase[1;31m"[0m[31m[0m[1B[0G=> [31m[1;31m"[0m[31mTHIS IS A STRING[1;31m"[0m[31m[0m[0m
+[21] pry(main)> "this is a string".send "upcase"[K[K[K[K[K[K[K[KL[K:color
+[1A[0G[21] pry(main)> [31m[1;31m"[0m[31mthis is a string[1;31m"[0m[31m[0m.send [33m:color[0m[1B[0GNoMethodError: undefined method `color' for "this is a string":String
+from (pry):21:in `__pry__'
+[22] pry(main)> "this is a string".send :color[K[K[K[K[K[K[K[K[K[K[Kcolor
+[1A[0G[22] pry(main)> [31m[1;31m"[0m[31mthis is a string[1;31m"[0m[31m[0m.color[1B[0GNoMethodError: undefined method `color' for "this is a string":String
+from (pry):22:in `__pry__'
+[23] pry(main)> blue.[K[K[K[K[Kblue.color = "red"
+[1A[0G[23] pry(main)> blue.color = [31m[1;31m"[0m[31mred[1;31m"[0m[31m[0m[1B[0GNoMethodError: undefined method `color=' for #<Pen:0x007f8704bfc178 @color="light_blue">
+from (pry):23:in `__pry__'
+[24] pry(main)> [6@(reverse-i-search)`':[Cl': blue.color = "red"[1@o[C[C[C[C[C[C[C[C[C[C[2Pa': load "./pen.rb"[1@d[C[C[C[10P[24] pry(main)>[C
+[1A[0G[24] pry(main)> load [31m[1;31m"[0m[31m./pen.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[25] pry(main)> l[Kclick = ClickyPen.new [K
+[1A[0G[25] pry(main)> click = [1;34;4mClickyPen[0m.new[1B[0GArgumentError: wrong number of arguments (0 for 1)
+from /Users/jdabbs/projects/homework/08-04/pen.rb:7:in `initialize'
+[26] pry(main)> click = ClickyPen.new("[K"light_red")
+[1A[0G[26] pry(main)> click = [1;34;4mClickyPen[0m.new([31m[1;31m"[0m[31mlight_red[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mClickyPen:0x007f8707140498 @color="light_red"[1;31m>[0m[31m[0m[0m
+[27] pry(main)> click.write("This is red tec[Kxt")
+[1A[0G[27] pry(main)> click.write([31m[1;31m"[0m[31mThis is red text[1;31m"[0m[31m[0m)[1B[0G[0;91;49mThis is red text[0m
+=> [1;36mnil[0m[0m
+[28] pry(main)> click.color = "light_green"
+[1A[0G[28] pry(main)> click.color = [31m[1;31m"[0m[31mlight_green[1;31m"[0m[31m[0m[1B[0G=> [31m[1;31m"[0m[31mlight_green[1;31m"[0m[31m[0m[0m
+[29] pry(main)> click.write("This is green text")
+[1A[0G[29] pry(main)> click.write([31m[1;31m"[0m[31mThis is green text[1;31m"[0m[31m[0m)[1B[0G[0;92;49mThis is green text[0m
+=> [1;36mnil[0m[0m
+[30] pry(main)> [6@(reverse-i-search)`':[Cl': click.write("This is green text")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Po': click.color = "light_green"[11Pa': load "./pen.rb"[1@d[C[C[C[10P[30] pry(main)>[C
+[1A[0G[30] pry(main)> load [31m[1;31m"[0m[31m./pen.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[31] pry(main)> np = Pen.new("green")
+[1A[0G[31] pry(main)> np = [1;34;4mPen[0m.new([31m[1;31m"[0m[31mgreen[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mPen:0x007f8704c9d0a0 @color="green"[1;31m>[0m[31m[0m[0m
+[32] pry(main)> np.color = :[K"blue"
+[1A[0G[32] pry(main)> np.color = [31m[1;31m"[0m[31mblue[1;31m"[0m[31m[0m[1B[0GNoMethodError: undefined method `color=' for #<Pen:0x007f8704c9d0a0 @color="green">
+from (pry):32:in `__pry__'
+[33] pry(main)> np.color = "blue" = Pen.new("green")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pload "./pen.rb"np = Pen.new("green")CPen.new("green")lPen.new("green")iPen.new("green")cPen.new("green")kPen.new("green")yPen.new("green")
+[1A[0G[33] pry(main)> np = [1;34;4mClickyPen[0m.new([31m[1;31m"[0m[31mgreen[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m#<[0m[31mClickyPen:0x007f8706499820 @color="green"[1;31m>[0m[31m[0m[0m
+[34] pry(main)> np.cl[Kolor = "blue"
+[1A[0G[34] pry(main)> np.color = [31m[1;31m"[0m[31mblue[1;31m"[0m[31m[0m[1B[0G=> [31m[1;31m"[0m[31mblue[1;31m"[0m[31m[0m[0m
+[35] pry(main)> require "./args"
+[1A[0G[35] pry(main)> require [31m[1;31m"[0m[31m./args[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[36] pry(main)> ls [K
+[1A[0G[36] pry(main)> ls[1B[0G[1m[1;34mself.methods[0m[0m: inspect  to_s
+[1m[1;34mlocals[0m[0m: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  [0;33mblue[0m  [0;33mclick[0m  [0;33mnp[0m  [0;33mp[0m
+[37] pry(main)> display-[K_name
+[1A[0G[37] pry(main)> display_name[1B[0GArgumentError: wrong number of arguments (0 for 2..3)
+from /Users/jdabbs/projects/homework/08-04/args.rb:1:in `display_name'
+[38] pry(main)> display_name("James", [K[K[K[K[K[K[K[KDabbs", "James", "Carl[Klton")
+[1A[0G[38] pry(main)> display_name([31m[1;31m"[0m[31mDabbs[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mJames[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mCarlton[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m"[0m[31mJames Carlton Dabbs[1;31m"[0m[31m[0m[0m
+[39] pry(main)> display_name("Dabbs", "James", "Carlton")[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)
+[1A[0G[39] pry(main)> display_name([31m[1;31m"[0m[31mDabbs[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mJames[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m"[0m[31mJames Dabbs[1;31m"[0m[31m[0m[0m
+[40] pry(main)> display_name("Dabbs", "James")[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[C[1P)")D)a)b)b)[1P)[1P)[1P)[1P)J)a)m)e)s) )D)a)b)b)s)")
+[1A[0G[40] pry(main)> display_name([31m[1;31m"[0m[31mJames Dabbs[1;31m"[0m[31m[0m)[1B[0GArgumentError: wrong number of arguments (1 for 2..3)
+from /Users/jdabbs/projects/homework/08-04/args.rb:1:in `display_name'
+[41] pry(main)> load "./args.rb"
+[1A[0G[41] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[42] pry(main)> display_d[Kname("James", "Dabbs")
+[1A[0G[42] pry(main)> display_name([31m[1;31m"[0m[31mJames[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mDabbs[1;31m"[0m[31m[0m)[1B[0G=> [31m[1;31m"[0m[31mDabbs  James[1;31m"[0m[31m[0m[0m
+[43] pry(main)> true || false
+[1A[0G[43] pry(main)> [1;36mtrue[0m || [1;36mfalse[0m[1B[0G=> [1;36mtrue[0m[0m
+[44] pry(main)> false || false
+[1A[0G[44] pry(main)> [1;36mfalse[0m || [1;36mfalse[0m[1B[0G=> [1;36mfalse[0m[0m
+[45] pry(main)> 2 || 3
+[1A[0G[45] pry(main)> [1;34m2[0m || [1;34m3[0m[1B[0G=> [1;34m2[0m[0m
+[46] pry(main)> nil || :fallback
+[1A[0G[46] pry(main)> [1;36mnil[0m || [33m:fallback[0m[1B[0G=> [33m:fallback[0m[0m
+[47] pry(main)> requ[K[K[K[Kload "./args"."r"b"
+[1A[0G[47] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G=> [1;36mtrue[0m[0m
+[48] pry(main)> Ca[K[Kc[Ka = Card.new(:A,:spe[Kades)
+[1A[0G[48] pry(main)> a = [1;34;4mCard[0m.new([33m:A[0m,[33m:spades[0m)[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f870714bcd0 @rank=:A, @suit=:spades[1;31m>[0m[31m[0m[0m
+[49] pry(main)> a[KCar.[Kd.new
+[1A[0G[49] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8707d9f450 @rank=6, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[50] pry(main)> Card.new
+[1A[0G[50] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8707d872d8 @rank=4, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[51] pry(main)> Card.new
+[1A[0G[51] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8707d66448 @rank=8, @suit=:spades[1;31m>[0m[31m[0m[0m
+[52] pry(main)> Card.new
+[1A[0G[52] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8709001cd8 @rank=:K, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[53] pry(main)> Card.new
+[1A[0G[53] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8704bfdac8 @rank=:A, @suit=:spades[1;31m>[0m[31m[0m[0m
+[54] pry(main)> Card.new
+[1A[0G[54] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8707d2d7b0 @rank=:J, @suit=:hearts[1;31m>[0m[31m[0m[0m
+[55] pry(main)> Card.new
+[1A[0G[55] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8704bc5588 @rank=:J, @suit=:spades[1;31m>[0m[31m[0m[0m
+[56] pry(main)> Card.new
+[1A[0G[56] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f87071293b0 @rank=7, @suit=:spades[1;31m>[0m[31m[0m[0m
+[57] pry(main)> Card.new
+[1A[0G[57] pry(main)> [1;34;4mCard[0m.new[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f87071012e8 @rank=7, @suit=:clubs[1;31m>[0m[31m[0m[0m
+[58] pry(main)> c = Card.new(:diamonds, 8)
+[1A[0G[58] pry(main)> c = [1;34;4mCard[0m.new([33m:diamonds[0m, [1;34m8[0m)[1B[0G=> [31m[1;31m#<[0m[31mCard:0x007f8704b7fec0 @rank=:diamonds, @suit=8[1;31m>[0m[31m[0m[0m
+[59] pry(main)> Keye[KwordCard.new(ra[K[K:rank => 8, :suit => :diamonds)
+[1A[0G[59] pry(main)> [1;34;4mKeywordCard[0m.new([33m:rank[0m => [1;34m8[0m, [33m:suit[0m => [33m:diamonds[0m)[1B[0GNameError: uninitialized constant KeywordCard
+from (pry):58:in `__pry__'
+[60] pry(main)> KeywordCard.new(:rank => 8, :suit => :diamonds)[C[C[C[C[C[C[C[C[C[C[C,) ):)r)a)n)k) )=)>) )8)[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[1A[0G[60] pry(main)> [1;34;4mKeywordCard[0m.new([33m:suit[0m => [33m:diamonds[0m, [33m:rank[0m => [1;34m8[0m)[1B[0GNameError: uninitialized constant KeywordCard
+from (pry):59:in `__pry__'
+[61] pry(main)> KeywordCard.new(:suit => :diamonds, :rank => 8)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr[Kl[K[6@(reverse-i-search)`':[Cl': load "./args.rb"[1@o[C[C[C[1@a[C[C[C[1@d[C[C[C[10P[61] pry(main)>[C
+[1A[0G[61] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[62] pry(main)> load "./args.rb"KeywordCard.new(:suit => :diamonds, :rank => 8)
+[1A[0G[62] pry(main)> [1;34;4mKeywordCard[0m.new([33m:suit[0m => [33m:diamonds[0m, [33m:rank[0m => [1;34m8[0m)[1B[0G=> [31m[1;31m#<[0m[31mKeywordCard:0x007f8707c9cd50 @rank=8, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[63] pry(main)> KeywordCard.new(:suit => :diamonds, :rank => 8)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pload "./args.rb"KeywordCard.new(:suit => :diamonds, :rank => 8)rank => 8, :suit => :diamonds)
+[1A[0G[63] pry(main)> [1;34;4mKeywordCard[0m.new([33m:rank[0m => [1;34m8[0m, [33m:suit[0m => [33m:diamonds[0m)[1B[0G=> [31m[1;31m#<[0m[31mKeywordCard:0x007f8704b2f830 @rank=8, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[64] pry(main)> KeywordCard.new(:rank => 8, :suit => :diamonds)suit => :diamonds, :rank => 8)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pload "./args.rb"KeywordCard.new(:suit => :diamonds, :rank => 8)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pload "./args.rb"
+[1A[0G[64] pry(main)> load [31m[1;31m"[0m[31m./args.rb[1;31m"[0m[31m[0m[1B[0G/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: already initialized constant Card::RANKS
+/Users/jdabbs/projects/homework/08-04/args.rb:10: warning: previous definition of RANKS was here
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: already initialized constant Card::SUITS
+/Users/jdabbs/projects/homework/08-04/args.rb:11: warning: previous definition of SUITS was here
+=> [1;36mtrue[0m[0m
+[65] pry(main)> load "./args.rb"KeywordCard.new(:rank => 8, :suit => :diamonds)suit => :diamonds, :rank => 8)
+[1A[0G[65] pry(main)> [1;34;4mKeywordCard[0m.new([33m:suit[0m => [33m:diamonds[0m, [33m:rank[0m => [1;34m8[0m)[1B[0GThe argument hash is: {:suit=>:diamonds, :rank=>8}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007f870706f898 @rank=8, @suit=:diamonds[1;31m>[0m[31m[0m[0m
+[66] pry(main)> KeywordCard.new(:suit => :diamonds, :rank => 8)[C[C[C[C[1P)5)[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@l[1@u[1@b[1@s
+[1A[0G[66] pry(main)> [1;34;4mKeywordCard[0m.new([33m:suit[0m => [33m:clubs[0m, [33m:rank[0m => [1;34m5[0m)[1B[0GThe argument hash is: {:suit=>:clubs, :rank=>5}
+=> [31m[1;31m#<[0m[31mKeywordCard:0x007f8707058be8 @rank=5, @suit=:clubs[1;31m>[0m[31m[0m[0m
+[67] pry(main)> KeywordCard.new
+[1A[0G[67] pry(main)> [1;34;4mKeywordCard[0m.new[1B[0GArgumentError: wrong number of arguments (0 for 1)
+from /Users/jdabbs/projects/homework/08-04/args.rb:25:in `initialize'
+[68] pry(main)> 
