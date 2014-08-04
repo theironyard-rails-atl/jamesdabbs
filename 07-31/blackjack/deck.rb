@@ -17,4 +17,10 @@ class Deck
     @drawn.push card
     card
   end
+
+  def reshuffle
+    @cards += @drawn
+    @drawn = []
+    @cards.shuffle!
+  end
 end

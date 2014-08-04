@@ -3,7 +3,7 @@ class Hand
     @cards = []
   end
 
-  def add *cards
+  def add(*cards)
     @cards += cards
   end
 
@@ -13,6 +13,10 @@ class Hand
     # names = []
     # @cards.each { |card| names << card.to_s }
     # names.join(", ")
+  end
+
+  def showing
+    @cards[1..-1].map { |card| card.to_s }.join
   end
 
   def value

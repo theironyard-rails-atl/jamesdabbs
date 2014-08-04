@@ -1,6 +1,6 @@
 class Card
   SUITS = [:C, :D, :H, :S]
-  RANKS = [:A] + (2..10).to_a + [:J, :Q, :K]
+  RANKS = (2..10).to_a + [:J, :Q, :K, :A]
 
   attr_reader :rank, :suit
   # or, equivalently
