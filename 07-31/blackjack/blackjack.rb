@@ -97,6 +97,9 @@ class Blackjack
     if player.busted?
       puts 'You busted!'
       player_lose(bet)
+      # This returns nil, but we don't really care
+      # We only care that it returns early and doesn't execute any
+      #   of the code below
       return
     end
 
