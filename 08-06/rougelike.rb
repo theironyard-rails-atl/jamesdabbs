@@ -1,6 +1,20 @@
+module HasHitPoints
+  def alive?
+    @hit_points > 0
+  end
+
+  def dead?
+    !alive?
+  end
+end
+
+
 class Adventurer
   attr_reader :max_damage, :level
   attr_accessor :hit_points
+
+  # This is a Mixin
+  include HasHitPoints
 
   def initialize(level=1)
     @level = level
@@ -21,14 +35,6 @@ class Adventurer
   def attack(other)
     # other.hit_points = other.hit_points - self.damage
     other.hit_points -= self.damage
-  end
-
-  def alive?
-    @hit_points > 0
-  end
-
-  def dead?
-    !alive?
   end
 end
 
@@ -101,5 +107,31 @@ class Wizard < Adventurer
       puts "You missed the darkness"
       other.hit_points
     end
+  end
+end
+
+
+class Monster
+  attr_reader :level
+  attr_accessor :hit_points
+
+  include HasHitPoints
+
+  def initialize(level)
+    @level = level
+    @hit_points = 0
+    level.times { @hit_points += rand(1..8) }
+  end
+
+  def attack(other)
+    roll = rand(1..6)
+    damage = roll
+
+    while roll == 6
+      roll = rand(1..6)
+      damage += roll
+    end
+
+    other.hit_points -= damage
   end
 end
