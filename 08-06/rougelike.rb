@@ -19,7 +19,16 @@ class Adventurer
   end
 
   def attack(other)
+    # other.hit_points = other.hit_points - self.damage
     other.hit_points -= self.damage
+  end
+
+  def alive?
+    @hit_points > 0
+  end
+
+  def dead?
+    !alive?
   end
 end
 
@@ -34,5 +43,63 @@ class Warrior < Adventurer
     @max_damage = 8
     @hit_points_per_level = 15
     super(level)
+  end
+
+  def savage_attack(other)
+    puts "Attacking with a(n) #{@weapon}"
+    num_attacks = (@level / 3) + 1
+    num_attacks.times { self.attack(other) }
+    # The other adventurer gets a free swing while your
+    #   defenses are down
+    other.attack(self) unless other.dead?
+  end
+end
+
+
+class Wizard < Adventurer
+  attr_accessor :potions
+
+  def initialize(level=1)
+    @weapon = "dagger"
+    @hit_points_per_level = 8
+    @mana, @potions = 10, 5
+    super # or super(level)
+  end
+
+  def drink_potion
+    if @potions > 0
+      puts "You drink a potion"
+      @mana += 10
+      @potions -= 1
+    else
+      puts "You are out of potions"
+    end
+  end
+
+  def magic_missle(other)
+    if @mana < 5
+      puts "Not enough mana"
+      # Early return, doesn't execute anything else in this function
+      return
+    else
+      @mana -= 5
+    end
+
+    # if rand(1..6) > 2
+    #   hit = true
+    # else
+    #   hit = false
+    # end
+    hit = rand(1..6) > 2
+    # or
+    # max = (@level / 2) + 6 & rand(1..max)
+
+    if hit
+      puts "I attack the darkness"
+      other.hit_points -= rand(6..100)
+    else
+      puts "You missed the darkness"
+      other.hit_points
+    end
   end
 end
