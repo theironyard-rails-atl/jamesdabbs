@@ -8,6 +8,11 @@ script to find
 * The top 10 best selling widgets
 * The number of widgets sold in each department
 
+You'll need to -
+
+Read the list of widgets from the YAML file: http://ruby-doc.org/stdlib-1.9.3/libdoc/yaml/rdoc/YAML.html
+Use appropriate methods from Enumerable: http://ruby-doc.org/core-2.1.2/Enumerable.html (lists are Enumerable!)
+
 
 ## 2. Would You Like to Play a Game?
 
