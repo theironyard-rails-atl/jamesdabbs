@@ -1,10 +1,23 @@
 module HasHitPoints
   def alive?
-    @hit_points > 0
+    self.hit_points > 0
   end
 
   def dead?
     !alive?
+  end
+end
+
+module Zombifiable
+  def reanimate
+    if dead?
+      @hit_points = Float::INFINITY
+    end
+  end
+
+  def headshot
+    puts "Boom!"
+    @hit_points = 0
   end
 end
 
@@ -15,6 +28,16 @@ class Adventurer
 
   # This is a Mixin
   include HasHitPoints
+  # if conan = Adventurer.new
+  # defines
+  #   conan.alive?
+  #   conan.dead?
+  # ok because conan.hit_points works
+
+  # `extend` HasHitPoints would define
+  # Adventurer.alive?
+  # Adventurer.dead?
+  # but Adventurer.hit_points won't work
 
   def initialize(level=1)
     @level = level
@@ -40,6 +63,7 @@ end
 
 
 class Villager < Adventurer
+  include Zombifiable
 end
 
 
@@ -116,6 +140,7 @@ class Monster
   attr_accessor :hit_points
 
   include HasHitPoints
+  include Zombifiable
 
   def initialize(level)
     @level = level

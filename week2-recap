@@ -1,0 +1,25 @@
+# Key Ideas from Week 2
+
+* Classes
+  * Attributes and accessors
+  * Recognizing instance variables vs. local variables vs.
+    instance methods.
+  * Method arguments (splats, defaults, and option hashes)
+  * Subclasses and inheritance
+  * Modules and mixins
+* Jekyll
+  * Using provided utilities like `jekyll serve`
+  * Markdown and HTML
+  * Project layout
+  * Git and push-to-deploy workflow
+
+* Errors and exceptions
+* Blocks and enumeration (map, reduce, select, reject, etc.)
+
+# Goals for Week 3
+
+* HTML and CSS
+* Sinatra
+  * Servers and the request -> response cycle
+  * Routing
+* REST and APIs
