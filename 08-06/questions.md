@@ -25,3 +25,9 @@ Ideas:
 * Adapt liberally from the rougelike presented in class
 * Design a racing game, with different classes of cars that
   have different speeds and abilities
+* Program a known game - if the game logic doesn't lend itself
+  to subclassing, you might think about having different player /
+  opponent classes (where the "AI" has different play strategies)
+  - The hangman game with opponents that know about the dictionary?
+  - Battleship
+  - Other ideas?
