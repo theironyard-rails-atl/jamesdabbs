@@ -11,6 +11,7 @@ end
 
 
 path = ARGV.first || raise("Please specify a file to load")
+puts "Reading file from path: #{path}"
 widgets = YAML.load_file path
 
 puts "The most expensive widget:"
@@ -39,9 +40,6 @@ widgets.sort_by { |w| -w[:sold] }.first(10).each_with_index do |w,i|
   puts "#{i+1}) #{w[:name]}"
 end
 puts
-
-require "pry"
-binding.pry
 
 puts "Department stats:"
 # Overly clever solution
