@@ -34,8 +34,56 @@ get '/times' do
   haml :table
 end
 
-get '/user/:id/profile' do
+get '/user/:user_id/profile/:profile_id/group' do
   # Key in the params is defined by the
   #   name (after :) in route
-  "The passed id is: #{params[:id]}"
+  "Params are: #{params}"
+end
+
+get '/echo' do
+  @text = params[:text]
+  haml :echo
+end
+post '/echo' do
+  @text = "you posted '#{params[:text]}'"
+  haml :echo
+end
+
+get '/new' do
+  # contents = params[:contents]
+  # File.open(params[:name], 'w') do |f|
+  #   f.puts contents
+  # end
+end
+
+# Unsafe GET request
+# Unsafe altogether
+get '/delete' do
+  # BAD!
+  #exec "rm #{params[:name]}"
+  "Deleted #{params[:name]}"
+end
+
+# Things that change state (create, modify, delete)
+# should NEVER be GET requests
+# - following a link is a GET request
+# - submitting a form can be GET or POST
+#   - for user to change state, they'll have to submit a form
+
+get '/search' do
+  haml :search
+end
+post '/search' do
+  words = File.read("words.txt").split("\n")
+  @letters = params[:q].downcase.split("")
+
+  @matches = []
+  words.each do |word|
+    next if word.length > 8
+    if @letters.all? { |c| word.downcase.chomp.include?(c) }
+      @matches << word
+    end
+  end
+
+  haml :search
 end
