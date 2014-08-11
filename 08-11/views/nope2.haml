@@ -1,21 +1,13 @@
 %html
   %head
-    :css
-      body {
-        background-color: #000;
-        color: #fff;
-        font-family:arial,helvetica;
-        font-size:5em;
-        text-align: center;
-      }
-      #main {
-        margin: 0px auto;
-        margin-top: 150px;
-        width: 350px;
-        text-align:center;
-      }
+    - # <link href="..." rel="...">
+    - # HAML specifies these with a Ruby hash
+    %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel=>"stylesheet"}
 
   %body
-    - # = replaces .erb's <%= to run ruby code
-    - # <h1 id="main">...</h1>
-    %h1#main= status
+    / This will be a div w/ class container
+    .container
+      / = replaces .erb's <%= to run ruby code
+      / <h1 id="main">...</h1>
+      .jumbotron
+        %h1= status

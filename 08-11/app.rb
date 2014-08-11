@@ -24,3 +24,8 @@ get '/hasthelargehadroncolliderdestroyedtheworldyet' do
   #erb :nope, :locals => { :status => okay }
   haml :nope2, :locals => { :status => okay }
 end
+
+get '/times' do
+  @max = 7
+  haml :table
+end
