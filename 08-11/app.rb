@@ -26,6 +26,16 @@ get '/hasthelargehadroncolliderdestroyedtheworldyet' do
 end
 
 get '/times' do
-  @max = 7
+  # params is a function from Sinatra
+  #   it returns a hash of values set using
+  #   ?key=value&key2=value2 from the web
+  @max = params[:max].to_i # defaults to 0
+  @min = params[:min].to_i
   haml :table
+end
+
+get '/user/:id/profile' do
+  # Key in the params is defined by the
+  #   name (after :) in route
+  "The passed id is: #{params[:id]}"
 end
