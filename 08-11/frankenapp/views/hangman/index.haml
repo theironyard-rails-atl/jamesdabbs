@@ -1,0 +1,24 @@
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th Id
+      %th Board
+      %th Status
+  %tbody
+    - @games.each do |id, game|
+      %tr
+        %td
+          %a{href: "/hangman/#{id}"}= id
+        %td= game.board
+        %td
+          / - klass = game.won? ? "success" : ""
+          / %span{ class: "label label-#{klass}" }
+          - if game.won?
+            %span.label.label-success= game.status
+          - elsif game.lost?
+            %span.label.label-danger= game.status
+          - else
+            = game.status
+
+%form{method: "POST"}
+  %button.btn.btn-danger New Game

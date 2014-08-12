@@ -1,0 +1,15 @@
+%h2 Reverser
+/ div with class "well"
+.well
+  / "action" is implicitly the current URL
+  %form{ method: "POST" }
+    .form-group
+      %label{ for: "text-input" } Text to Reverse
+      %input.form-control{ name: "text", placeholder: "Enter text", value: @original }
+    %button.btn.btn-primary Reverse
+
+  - if @result
+    %hr
+
+    %h4 Reversed Text
+    %p= @result

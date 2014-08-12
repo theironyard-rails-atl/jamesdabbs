@@ -1,0 +1,29 @@
+!!!
+/ ^-- that is a doctype
+%html
+  %head
+    / This formats the title of the tab in the browser
+    %title Frankenapp
+    %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel=>"stylesheet"}
+
+  %body
+    %nav.navbar.navbar-inverse{role: "navigation"}
+      .container-fluid
+        .navbar-header
+          %a.navbar-brand{href: "/"} Frankenapp
+        %ul.nav.navbar-nav
+          %li
+            / This is a link to '/reverse'
+            / "http://www.google.com" to go off-site
+            %a{href: "/reverse"} Reverse
+          %li
+            %a{href: "/count"} Count
+          %li
+            %a{href: "/repos"} Repos
+          %li
+            %a{href: "/hangman"} Hangman
+          %li
+            %a{href: "/blastoff"} Blastoff
+
+    .container
+      = yield

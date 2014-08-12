@@ -1,0 +1,23 @@
+%h3 Hangman
+%h4 Game #{@id}
+
+- if @hit
+  .alert.alert-success
+    %p You got it!
+- elsif @guess
+  .alert.alert-danger
+    %p Could not find a '#{@guess}'
+
+%pre
+  = @game.board
+
+%h5 Available Letters
+%p= @game.available_letters
+
+%h5 Status
+%p= @game.status
+
+- unless @game.finished?
+  %form{ method: "POST" }
+    %input.form-control{ name: "guess", placeholder: "Guess a letter", maxlength: 1 }
+    %button.btn.btn-default Guess

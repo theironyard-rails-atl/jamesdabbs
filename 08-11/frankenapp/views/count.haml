@@ -1,0 +1,26 @@
+%form{ method: "POST" }
+  .form-group
+    %label Text to Analyze
+    %textarea.form-control{ name: "text", placeholder: "Enter text", rows: 20 }
+      = @text
+
+  %label
+    %input{:checked => @separator != " ", :name => "separator", :type => "radio", :value => ""}
+      Count by letter
+  %label
+    %input{:checked => @separator == " ", :name => "separator", :type => "radio", :value => " "}
+      Count by word
+
+  %button.btn.btn-success Show Counts
+
+  - if @counts
+    %table.table.table-striped.table-hover
+      %thead
+        %tr
+          %th
+          %th Count
+      %tbody
+        - @counts.sort_by { |key, count| -count }.each do |key, count|
+          %tr
+            %td= key
+            %td= count

@@ -1,0 +1,17 @@
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th Name
+      %th Size
+      %th Description
+      %th Created At
+      %th Updated At
+  %tbody
+    - @repos.each do |repo|
+      %tr
+        %td
+          %a{href: repo.url}= repo.name
+        %td= repo.size
+        %td= repo.description
+        %td= repo.created_at
+        %td= repo.updated_at

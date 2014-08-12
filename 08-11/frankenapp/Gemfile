@@ -1,0 +1,7 @@
+gem 'artoo'
+gem 'artoo-ardrone'
+gem 'haml'
+gem 'httparty'
+gem 'pry'
+gem 'sinatra'
+gem 'shotgun'
