@@ -1,0 +1,451 @@
+{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=battles&offset=0&limit=20&type=artist",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0Rq2hV3S3O4JMWbL2B510w"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0Rq2hV3S3O4JMWbL2B510w",
+      "id" : "0Rq2hV3S3O4JMWbL2B510w",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/21096a62d132fa4c203b2c08b5d4d39d7b26f222",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9ccfa951dd17d371cf4ca45935b6f0f2e7578633",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c391152f58bb165229459bdd1c237173931a6070",
+        "width" : 64
+      } ],
+      "name" : "Epic Rap Battles of History",
+      "popularity" : 43,
+      "type" : "artist",
+      "uri" : "spotify:artist:0Rq2hV3S3O4JMWbL2B510w"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3EMSpwRtkvUTxfB4aS5xnA"
+      },
+      "genres" : [ "Alternative Pop/Rock", "Alternative/Indie Rock", "Experimental Rock", "Indie Rock", "Math Rock", "Neo-Prog", "Pop/Rock", "Post-Rock", "Prog-Rock" ],
+      "href" : "https://api.spotify.com/v1/artists/3EMSpwRtkvUTxfB4aS5xnA",
+      "id" : "3EMSpwRtkvUTxfB4aS5xnA",
+      "images" : [ {
+        "height" : 604,
+        "url" : "https://i.scdn.co/image/cb602b56522027337ea46ff78f4121b1c71e404d",
+        "width" : 1000
+      }, {
+        "height" : 386,
+        "url" : "https://i.scdn.co/image/b3b2b55e581f91d72d9cdd9277a8b7aeeab390b5",
+        "width" : 639
+      }, {
+        "height" : 121,
+        "url" : "https://i.scdn.co/image/5fc388c4222794941b6b5dd89bc7f35ed240c5dc",
+        "width" : 200
+      }, {
+        "height" : 39,
+        "url" : "https://i.scdn.co/image/15eeb6660ff99b32ff0a3674ae0769e67f72a1c6",
+        "width" : 64
+      } ],
+      "name" : "Battles",
+      "popularity" : 24,
+      "type" : "artist",
+      "uri" : "spotify:artist:3EMSpwRtkvUTxfB4aS5xnA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6jLpzYRLHyELSCPHm6AJnI"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6jLpzYRLHyELSCPHm6AJnI",
+      "id" : "6jLpzYRLHyELSCPHm6AJnI",
+      "images" : [ {
+        "height" : 500,
+        "url" : "https://i.scdn.co/image/972a23c1b2b02d158a9ebc90a598c1fc6b4bb8ab",
+        "width" : 900
+      }, {
+        "height" : 356,
+        "url" : "https://i.scdn.co/image/001096f41d751f975a7797302d34e0d4c4248240",
+        "width" : 640
+      }, {
+        "height" : 111,
+        "url" : "https://i.scdn.co/image/ae0d883c09a420efd08a42bffcb0caefb3ce70f3",
+        "width" : 200
+      }, {
+        "height" : 36,
+        "url" : "https://i.scdn.co/image/ac7e67b7a3ed7f3e6125140758b538d00944ffe9",
+        "width" : 64
+      } ],
+      "name" : "Junior Battles",
+      "popularity" : 3,
+      "type" : "artist",
+      "uri" : "spotify:artist:6jLpzYRLHyELSCPHm6AJnI"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7FsktAEuQjT30RNzWJ3jZN"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7FsktAEuQjT30RNzWJ3jZN",
+      "id" : "7FsktAEuQjT30RNzWJ3jZN",
+      "images" : [ ],
+      "name" : "John Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:7FsktAEuQjT30RNzWJ3jZN"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/46XudiprCWFUJ7d4peXv5c"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/46XudiprCWFUJ7d4peXv5c",
+      "id" : "46XudiprCWFUJ7d4peXv5c",
+      "images" : [ {
+        "height" : 302,
+        "url" : "https://i.scdn.co/image/ff2b6ba7fe9c445e168c735b8380155c52a9f7ba",
+        "width" : 451
+      }, {
+        "height" : 134,
+        "url" : "https://i.scdn.co/image/2bf724fa249eb8cdd80f2f7be558f40e458fb499",
+        "width" : 200
+      }, {
+        "height" : 43,
+        "url" : "https://i.scdn.co/image/87af6d9f5f7f59e45c10e1bb1dac7295a9a8272d",
+        "width" : 64
+      } ],
+      "name" : "The Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:46XudiprCWFUJ7d4peXv5c"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7hj4wpyMUKL6a8EIETmJyW"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7hj4wpyMUKL6a8EIETmJyW",
+      "id" : "7hj4wpyMUKL6a8EIETmJyW",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5117a8c6732f8d227100da3493cf165e08e9761e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7f12a8024df6761bee9d80f73d941a7e85714677",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/10710381b4287edfece675fd4894b72531406526",
+        "width" : 64
+      } ],
+      "name" : "Otis Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:7hj4wpyMUKL6a8EIETmJyW"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4y4PZAbayaMhs7KrWGsZ7K"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4y4PZAbayaMhs7KrWGsZ7K",
+      "id" : "4y4PZAbayaMhs7KrWGsZ7K",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b1e7667d804c0526166a36464794e0ed2b793891",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/251b5c3c6c9bfe5e0aeec3ed77b1d3a9df858a2a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0bf9bf0c5a94771c88d40d48ea658a39f9d37348",
+        "width" : 64
+      } ],
+      "name" : "Lemmie Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4y4PZAbayaMhs7KrWGsZ7K"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0dmxIGwTLk0kdDyHKQ9i6F"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0dmxIGwTLk0kdDyHKQ9i6F",
+      "id" : "0dmxIGwTLk0kdDyHKQ9i6F",
+      "images" : [ {
+        "height" : 600,
+        "url" : "https://i.scdn.co/image/37580e6e9099ff972eab318616cbec729215a696",
+        "width" : 600
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/11033f2bf9df07fd40c278a59d558c9faa47d821",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f60b8717166f0523cd5b57ec0d46be81f79fef1b",
+        "width" : 64
+      } ],
+      "name" : "K.D. Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0dmxIGwTLk0kdDyHKQ9i6F"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7sXsGDC6k9iEscWhyVMmbx"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7sXsGDC6k9iEscWhyVMmbx",
+      "id" : "7sXsGDC6k9iEscWhyVMmbx",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/84c6c0fa549756f65096c6f3e4ff2b989a2711a5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a66df2a7d5dcfc0580645988af1ec357823cef99",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c6e3aa4130b5a5904980791ad6288bb48a262839",
+        "width" : 64
+      } ],
+      "name" : "Alex Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:7sXsGDC6k9iEscWhyVMmbx"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2khtP0vUSvq7LlIcXHhMAI"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2khtP0vUSvq7LlIcXHhMAI",
+      "id" : "2khtP0vUSvq7LlIcXHhMAI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/76296cddbdc3b156c8b0781e6443d2105a647bfd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/39dcb1cdcd30d5c411bf64232aa4d99fed4dac3d",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e098dcac80ab4806f78514a4053aa485858a89a6",
+        "width" : 64
+      } ],
+      "name" : "Random Battles",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:2khtP0vUSvq7LlIcXHhMAI"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4U3gIEqLeO7KDrL4orKJoM"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4U3gIEqLeO7KDrL4orKJoM",
+      "id" : "4U3gIEqLeO7KDrL4orKJoM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/22475b4b4b90e11b2c0e9010bf98128b4c8c6b33",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4ced58df098bc8e269edd952000440a2bcc1eaef",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0fbe4ecb4828aa7386ed16627f74094f3b37b249",
+        "width" : 64
+      } ],
+      "name" : "Brian Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4U3gIEqLeO7KDrL4orKJoM"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/24SwsBq76FnNeXW9Do4wPI"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/24SwsBq76FnNeXW9Do4wPI",
+      "id" : "24SwsBq76FnNeXW9Do4wPI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5553e1e54ebea0e22681d904cd2fbda8caa40030",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/24e28a4fe515d53eb496d907f63cf4105c92fb45",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/618cd9f9633e20bbaacda5343d1957b01832dfb4",
+        "width" : 64
+      } ],
+      "name" : "Mark Battles",
+      "popularity" : 8,
+      "type" : "artist",
+      "uri" : "spotify:artist:24SwsBq76FnNeXW9Do4wPI"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1Kt77bjClywDOf1uSAfFS3"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1Kt77bjClywDOf1uSAfFS3",
+      "id" : "1Kt77bjClywDOf1uSAfFS3",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/75adbf753b38b1ec1b4a0c82e14dd29949c2dc13",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/0a3374321ab4e3f5ed68a7e0ce476fe41332b096",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/4893003c9606af6c3c7219a190bb8d50e4eaa415",
+        "width" : 64
+      } ],
+      "name" : "Christopher Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1Kt77bjClywDOf1uSAfFS3"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7mWle9eOSKD2k1L1dbMZB3"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7mWle9eOSKD2k1L1dbMZB3",
+      "id" : "7mWle9eOSKD2k1L1dbMZB3",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/553f893eb33a5b660d01d19d554e9eceb06fef52",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/f54f1ccf833fbb0a0a229b93ad70e6a7d180b72b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/2e0600aa7c9bd02073e11fdde8ae768475b12243",
+        "width" : 64
+      } ],
+      "name" : "G. Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:7mWle9eOSKD2k1L1dbMZB3"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0D9c4pMj6zCM6ThJBAPqw2"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0D9c4pMj6zCM6ThJBAPqw2",
+      "id" : "0D9c4pMj6zCM6ThJBAPqw2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/37f01994eccc0c821b3e40e611e958bbfe3b53b0",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/18f90a03bc54e0c446fa18cc1b5518f98132fcfe",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/21c72442dc890a191c3e858737b046866c6193ac",
+        "width" : 64
+      } ],
+      "name" : "Classroom Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0D9c4pMj6zCM6ThJBAPqw2"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4PpBojCGDhU8SHBBZp8k7c"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4PpBojCGDhU8SHBBZp8k7c",
+      "id" : "4PpBojCGDhU8SHBBZp8k7c",
+      "images" : [ ],
+      "name" : "Laurent Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4PpBojCGDhU8SHBBZp8k7c"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6uVXq2PMCRW1OKVuYcv6T9"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6uVXq2PMCRW1OKVuYcv6T9",
+      "id" : "6uVXq2PMCRW1OKVuYcv6T9",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/cfc664a6dec4c0708fd47d4c2e4fe7c87045f825",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b12983d1df8adad9d46c2587fbec045eaade3067",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/df13245713130f9a5e412d3bd023c05592565219",
+        "width" : 64
+      } ],
+      "name" : "Animeme Rap Battles",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:6uVXq2PMCRW1OKVuYcv6T9"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2TdII6spMb8kU51kv8NatO"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2TdII6spMb8kU51kv8NatO",
+      "id" : "2TdII6spMb8kU51kv8NatO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bbc1d2050332850d6e39750eb85633c20b07b543",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ac1d15ab8db2e5d9f0beef4eccc24d98afdab413",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/525fcd1f027ef8c79e5569f0ddbb168074b36db3",
+        "width" : 64
+      } ],
+      "name" : "The Battles We Pick",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2TdII6spMb8kU51kv8NatO"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2eVGNcgaKeg0dtXn4sDlwz"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2eVGNcgaKeg0dtXn4sDlwz",
+      "id" : "2eVGNcgaKeg0dtXn4sDlwz",
+      "images" : [ ],
+      "name" : "Ian Williams - Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2eVGNcgaKeg0dtXn4sDlwz"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3nBgqZtZEVlJTDw7laOpnt"
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3nBgqZtZEVlJTDw7laOpnt",
+      "id" : "3nBgqZtZEVlJTDw7laOpnt",
+      "images" : [ ],
+      "name" : "Evangelist Lemme Battles",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3nBgqZtZEVlJTDw7laOpnt"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=battles&offset=20&limit=10&type=artist",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 30
+  }
+}
