@@ -2,8 +2,8 @@
 
 Start working on the ATLRUG Job Board in teams. Some recommendations:
 
-* Create a Github team for your group
-* Fork the existing work from class into a repo manageable by the group
+* Create a Github organization for your group
+* Fork the existing work from class into a repo owned by your new organization
 * Each group member should clone down and work on that repo
 * Plan out and divvy up work by features
 * Work should be done in feature branches
