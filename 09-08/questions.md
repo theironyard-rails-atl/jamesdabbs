@@ -15,3 +15,6 @@
   * Have a button to (add form elements to) challenge multiple users / words at a time
   * Extra: games track and display which user created them
   * Extra: prevent the user from submitting invalid data
+* Add a "solve the puzzle" feature
+  * Pop up a dialogue box (could use `window.prompt`) for the solution and send a request
+  * Game should be won or lost after submission
