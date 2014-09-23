@@ -1,6 +1,8 @@
 # Stripe
 
-Today, we continue implementing features for the Iron Shop project, starting in class from [the reference model implementation branch](ihttps://github.com/theironyard-rails-atl/iron-shop/tree/reference-model-implementation)
+Today, we continue implementing features for the Iron Shop project, starting in class from [the reference model implementation branch](https://github.com/theironyard-rails-atl/iron-shop/tree/reference-model-implementation).
+
+See also the [in-class commits](https://github.com/theironyard-rails-atl/iron-shop/compare/6c2f7a7da9c2b80e1e98ed04f686c3e314f3a120...aad8cb030330e10c5ef85066c64c12c162f98a80).
 
 # Homework
 
